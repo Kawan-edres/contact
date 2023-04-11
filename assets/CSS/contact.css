@@ -1,0 +1,30 @@
+.navbar-custom {
+    background-color:rgb(234, 239, 239);
+}
+
+.icons{
+	width: 30px;
+}
+
+#contacts{
+	width: 25px;
+}
+
+#addContact{
+	width: 25px
+
+}
+
+.contactIcons{
+	width: 23px;
+	font-size: 90px;
+}
+
+h1{
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 90px;
+}
+
+.navbar-brand{
+	font-family: 'Arvo', serif;
+}

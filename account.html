@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="./assets/CSS/contact.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-custom navbar-expand-lg navbar-light ">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./icon/agenda.png" alt="" width="50" height="50"
+                        class="me-3" />
+                    Account</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="me-1" aria-hidden="true"> <img
+                                        class="icons" src="icon/user-profile.png" alt="">
+                                </i>
+                                Someone
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <button class="dropdown-item" id="logout-btn">
+                                        <img class="contactIcons" src="./icon/exit.png" alt="">
+                                        <i class="me-1"></i> Logout
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" id="contact-btn">
+                                        <img class="contactIcons" src="icon/contacts.png" alt="">
+                                        <i class="me-1"></i> Contacts
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" onclick="deleted_page()">
+                                        <img class="contactIcons" src="icon/contacts.png" alt="">
+                                        <i class="me-1"></i> Deleted
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <form class="row g-3 m-5">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" value="someone@mail.com">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" value="someone123">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Username</label>
+                <input type="text" class="form-control" id="inputAddress" value="Someone" readonly>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress2" value="1234 Main St" readonly>
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" value="Erbil" readonly>
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <input type="text" class="form-control" name="" id="" value="Erbil" readonly>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip" value="44001" readonly>
+            </div>
+        </form>
+
+    </main>
+
+    <script src="./assets/js/accountPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
